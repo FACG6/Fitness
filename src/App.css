@@ -1,33 +1,36 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.App{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: baseline;
+    background: url('https://cdn.shopify.com/s/files/1/2930/2308/products/deep-gray-printed-old-master-solid-background-for-photography-backdrop_540x.jpg?v=1535707898');
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Navbar_Main{
+  position: fixed;
+}
+
+i{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Card_list{
+  border: none;
+  position: center;
+  font: 24px/36px sans-serif;
+  width: 380px;
+  height: 600px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Card_list span{
+  width: 200px;
+  height: 150px;
+  overflow-y: auto;
 }
