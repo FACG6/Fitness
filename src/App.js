@@ -17,8 +17,7 @@ function App() {
           <Route path='/'   exact  render={()=>(isLogged ? <Home /> : <Login /> )}/>
           <Route path='/edit'  exact render={()=>(isLogged ? <Edit /> : <Login />)}/>
         </Router>
-      )  
-  
+      )
 }
 
 export default App;

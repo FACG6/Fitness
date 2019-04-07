@@ -1,0 +1,102 @@
+{
+	"exercises": [{
+		"id": 0,
+		"name": "Dumbbell swing",
+		"video": "https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/03/dumbbell-swing.jpg?itok=2894Jr8k"
+	}, {
+		"id": 1,
+		"name": " Overhead squat",
+		"video": "https://cdn1.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/03/dumbbell-overhead-squat.jpg?itok=RJdHm0AQ"
+	}, {
+		"id": 2,
+		"name": " Side lunge",
+		"video": "https://cdn1.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/03/dumbbell-side-lunge.jpg?itok=j6MmT7Nt"
+	}, {
+		"id": 3,
+		"name": "Press-up  renegade row",
+		"video": "https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/03/press-up-renegade-row.jpg?itok=NKY7xe9A"
+	}, {
+		"id": 4,
+		"name": "TLeg raise",
+		"video": "https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/03/leg-raise.jpg?itok=VQYrt-YX"
+	}, {
+		"id": 5,
+		"name": "Power snatch",
+		"video": "https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/03/dumbbell-power-snatch.jpg?itok=YZkgdMzi"
+	}, {
+		"id": 6,
+		"name": "Squat press (or thruster)",
+		"video": "https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/03/dumbbell-squat-press.jpg?itok=xO8vI24a"
+	}, {
+		"id": 7,
+		"name": "Jump squat",
+		"video": "https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/03/dumbbell-squat-jump.jpg?itok=Q1sEk-yC"
+	}, {
+		"id": 8,
+		"name": "Windmill",
+		"video": "https://cdn1.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/03/dumbbell-windmill.jpg?itok=rmxUMAFF"
+	}, {
+		"id": 9,
+		"name": "Roll-out",
+		"video": "https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/03/dumbbell-roll-out.jpg?itok=Swu4ZEAz"
+	}, {
+		"id": 10,
+		"name": "Back of steel",
+		"video": "https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/03/back-of-steel.jpg?itok=wP9M1GnJ"
+	}, {
+		"id": 11,
+		"name": "One-leg Romanian deadlift",
+		"video": "https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/03/one-leg-romanian-deadlift.jpg?itok=zdgmPHAq"
+	}, {
+		"id": 12,
+		"name": "One-leg squat",
+		"video": "https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/03/dumbbell-pistol-squat.jpg?itok=uJf0xFqs"
+	}, {
+		"id": 13,
+		"name": "Woodchop lunge",
+		"video": "https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/03/dumbbell-woodchop-lunge.jpg?itok=j-zb_zEL"
+	}, {
+		"id": 14,
+		"name": "Turkish get-up",
+		"video": "https://cdn2.coachmag.co.uk/sites/coachmag/files/styles/insert_main_wide_image/public/2018/03/dumbbell-turkish-get-up.jpg?itok=c0S24G8s"
+	}],
+	"days": [{
+		"id": 0,
+		"name": "Sunday",
+		"checked": true
+	}, {
+		"id": 1,
+		"name": "Monday",
+		"checked": true
+	}, {
+		"id": 2,
+		"name": "Tuesday",
+		"checked": true
+	}, {
+		"id": 3,
+		"name": "Wed",
+		"checked": true
+	}, {
+		"id": 4,
+		"name": "Thure",
+		"checked": true
+	}, {
+		"id": 5,
+		"name": "Fri",
+		"checked": true
+	}, {
+		"id": 6,
+		"name": "Saturday",
+		"checked": true
+	}],
+	"exercises_days": [{
+		"exid": 1,
+		"dayid": 6
+	},{
+		"exid": 2,
+		"dayid": 6
+	},{
+		"exid": 3,
+		"dayid": 6
+	}]
+}
