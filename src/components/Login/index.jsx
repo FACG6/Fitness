@@ -6,14 +6,8 @@ import { Redirect } from "react-router-dom";
 
 export default class Login extends Component {
 
-  state = {
-    email: '',
-    password: '',
-    success: false
-  };
-  handleInput = ({ target: { value, name } }) => {
-    this.setState({ [name]: value});
-  }
+ 
+
   handleClick = () => {
   
     if ((this.state.email).toLowerCase() === 'fatma.o.siam@gmail.com' && this.state.password === '123123') {
@@ -28,6 +22,7 @@ export default class Login extends Component {
     error.textContent='Check your Email or Passwors Error';
     }
   }
+  
   render() {
     return (
       <div className='bodydiv'>
@@ -35,8 +30,8 @@ export default class Login extends Component {
         <div className='form'>
           <Input
             id="email"
-            value={this.state.email}
-            onChange={this.handleInput}
+            value={this.props.email}
+            onChange={this.props.handleChange}
             name={"email"}
             type='email'
             className='input'
@@ -46,8 +41,8 @@ export default class Login extends Component {
           <br />
           <Input
             id="password"
-            value={this.state.password}
-            onChange={this.handleInput}
+            value={this.props.password}
+            onChange={this.props.handleChange}
             name={"password"}
             type='password'
             className='input'
@@ -56,8 +51,10 @@ export default class Login extends Component {
           <br />
           <label id='error'></label>
           <br />
-          <Button buttonText='login' id='loginbtn' onClick={this.handleClick} className='submitbtn' />
-          {this.state.success && (<Redirect to='/' />)}
+          <Button buttonText='login' id='loginbtn' onClick={() => {
+            console.log('Enter')
+            this.props.handleClick();
+            }} className='submitbtn' />
         </div>
       </div>
     )
