@@ -1,4 +1,8 @@
 {
+	"user": {
+		"email": "f.siam@gmail.com",
+		"password": "123123"
+	},
 	"exercises": [{
 		"id": 0,
 		"name": "Dumbbell swing",
@@ -92,10 +96,10 @@
 	"exercises_days": [{
 		"exid": 1,
 		"dayid": 6
-	},{
+	}, {
 		"exid": 2,
 		"dayid": 6
-	},{
+	}, {
 		"exid": 3,
 		"dayid": 6
 	}]
