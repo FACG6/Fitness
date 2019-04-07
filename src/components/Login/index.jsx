@@ -31,7 +31,11 @@ const Login =({email, handleChange, handleClick , password , error})=> {
           <br />
           <label className='error'>{error}</label>
           <br />
-          <Button buttonText='login' id='loginbtn' onClick={()=>handleClick()} className='submitbtn' />
+          <Button 
+          buttonText='login'
+          id='loginbtn' 
+          onClick={()=>handleClick()} 
+          className='submitbtn' />
         </div>
       </div>
     )
