@@ -29,7 +29,7 @@ const Login =({email, handleChange, handleClick , password , error})=> {
             placeholder='Password'
           />
           <br />
-          <label id='error'></label>
+          <label className='error'>{error}</label>
           <br />
           <Button buttonText='login' id='loginbtn' onClick={()=>handleClick()} className='submitbtn' />
         </div>

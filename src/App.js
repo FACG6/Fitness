@@ -9,7 +9,8 @@ export default class App extends Component {
   state = {
     isLogged: false, 
     email: '',
-    password: ''
+    password: '',
+    error: null
   };
 
   handleLogin = () => {
@@ -18,22 +19,20 @@ export default class App extends Component {
       localStorage.setItem('password',this.state.password);
       this.setState({isLogged: true}) 
     } else {
-      const error = document.getElementById('error');
-      this.setState({ email :"" , password:""});
-      error.style.color='red';
-      error.textContent='Check your Email or Passwors Error';
+      this.setState({ error : 'Check your Email or Passwors Error'});
     }
   }
   handleInput = ({ target: { value, name } }) => this.setState({ [name]: value});
   render() {
     const islogged = localStorage.getItem('email') === user.email && localStorage.getItem('password') === user.password;
 
-    const { isLogged, email, password } = this.state;
+    const { email, password, error } = this.state;
     const login = <Login 
                     email={email} 
                     password={password} 
                     handleClick={this.handleLogin} 
-                    handleChange={this.handleInput}/> ;
+                    handleChange={this.handleInput}
+                    error={error ? error : null} /> ;
     return (
       <div>
         <Router>
