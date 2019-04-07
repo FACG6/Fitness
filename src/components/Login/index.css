@@ -1,0 +1,52 @@
+body {
+  background: url('https://cdn.shopify.com/s/files/1/2930/2308/products/deep-gray-printed-old-master-solid-background-for-photography-backdrop_540x.jpg?v=1535707898');
+  color:white;
+  font-family: 'Denk One', sans-serif;
+
+}
+
+.bodydiv {
+
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form{
+  width:70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  
+  font-family: 'Denk One', sans-serif;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.work{
+  border-bottom: 5px solid #37A000;
+}
+
+@media screen and (min-width:540px){
+.form{
+  width: 30%;
+}
+}
+
+@media screen and (min-width:530px){
+  .form{
+    width: 60%;
+  }
+  }
+
+
+
+@media screen and (min-width:900px){
+  .form{
+    width: 40%;
+  }
+  }
