@@ -1,23 +1,24 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 .input {
   width: 50%;
   height: 41px;
   background-color: rgba(196, 196, 196, 0.75);
   border-radius: 4px;
-  border:none;
+  border: none;
   margin: 0 auto;
   padding-left: 15px;
   font-family: 'Denk One', sans-serif;
 }
 
-#email{
-width: 100%;
-}
-#password{
+#email {
   width: 100%;
+}
 
+#password {
+  width: 100%;
 }

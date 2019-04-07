@@ -23,6 +23,9 @@
 .work{
   border-bottom: 5px solid #37A000;
 }
+.error{
+  color: red;
+}
 
 @media screen and (min-width:540px){
 .form{
