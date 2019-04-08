@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import {Redirect} from 'react-router-dom';
 import Navbar from "../SharedComponent/Navbar";
 import WorkCard from "../SharedComponent/WorkCard";
-import {exercises } from '../../api/workout.json';
+import {exercises , user} from '../../api/workout.json';
 class TodayWorkout extends Component {
   state = {
     exercises: exercises,
@@ -20,7 +20,7 @@ class TodayWorkout extends Component {
         <Navbar className="Navbar_Main"/>
         <div className='list'>
         <Link to='/edit'> <div className="icon"><i className="far fa-edit icon" /></div> </Link>  
-          <p className="Welcome">Welcome Mr. Farah</p>
+          <p className="Welcome">Welcome Mr. {user.username}</p>
           <div className="Card_list">
         { (dayid[0] === (new Date().getDay()).toString())?
             <ul className="repos--list">
