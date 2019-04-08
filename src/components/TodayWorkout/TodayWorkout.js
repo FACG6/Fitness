@@ -22,6 +22,7 @@ class TodayWorkout extends Component {
         <Link to='/edit'> <div className="icon"><i className="far fa-edit icon" /></div> </Link>  
           <p className="Welcome">Welcome Mr. {user.username}</p>
           <div className="Card_list">
+          {console.log(dayid[0] === (new Date().getDay()).toString())}
         { (dayid[0] === (new Date().getDay()).toString())?
             <ul className="card--list">
             {exercises.map(exercise => <WorkCard key={exercise.id} {...exercise} />)}

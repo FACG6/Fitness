@@ -1,4 +1,3 @@
-import './index.css';
 import React, { Component } from 'react';
 import Navbar from '../../SharedComponent/Navbar';
 import Button from '../../SharedComponent/button';
@@ -6,6 +5,7 @@ import { Redirect } from 'react-router-dom';
 import {exercises} from '../../../api/workout.json';
 import Input from '../../SharedComponent/input';
 import Icons from '../../SharedComponent/icon';
+import Swal from 'sweetalert2';
 
 class EditExercises extends Component {
   state={
@@ -15,6 +15,10 @@ class EditExercises extends Component {
   
   handleClick =()=>{
     localStorage.setItem('updatedExercies', JSON.stringify(this.state.updatedExercies));
+    Swal.fire({
+      text:'added done',
+      type: 'success'
+    })
     this.setState({isDone :true});
   }
   handlecheckbox = ({ target: { value , dataset, name} }) => this.setState(({updatedExercies}) =>{
