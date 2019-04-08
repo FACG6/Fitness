@@ -1,21 +1,25 @@
-import React , {Component} from 'react';
-import {Link} from 'react-router-dom';
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import Button from './button'
-class Icons extends Component{
-  state={
-    isloggled : false
-  }
-render(){
-  return(
-    <div className='icons'>
-    <Link to='/'> <div className="icon"><i className="fas fa-home icon" /></div> </Link>
-    <Button buttonText=''
-          id='logoutbtn'
-          onClick={()=>console.log('Enter')}
-          className='fas fa-sign-out-alt logoutbtn'/> 
-    
-    </div>
-  )
+
+const handleclick = (e) => {
+  sessionStorage.clear();
+  window.location.href='/login';
+  return true;
 }
+
+const Icons =()=> {
+    return (
+      <div className='icons'>
+        <Link to='/'> <div className="icon"><i className="fas fa-home icon" /></div> </Link>
+        <Button buttonText=''
+          id='logoutbtn'
+          onClick={handleclick}
+          className='fas fa-sign-out-alt logoutbtn'
+          type='submit' />
+      </div>
+    )
+  
 }
 export default Icons;
