@@ -23,7 +23,7 @@ class TodayWorkout extends Component {
           <p className="Welcome">Welcome Mr. {user.username}</p>
           <div className="Card_list">
         { (dayid[0] === (new Date().getDay()).toString())?
-            <ul className="repos--list">
+            <ul className="card--list">
             {exercises.map(exercise => <WorkCard key={exercise.id} {...exercise} />)}
             </ul>
           :

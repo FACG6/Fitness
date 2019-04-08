@@ -28,14 +28,17 @@ i{
 
 .Card_list{
   border: none;
-  position: center;
   font: 24px/36px sans-serif;
   width: 380px;
   height: 600px;
+  margin: 0 auto;
 }
 
 .Card_list span{
   width: 200px;
   height: 150px;
   overflow-y: auto;
+}
+.card--list{
+  list-style-type: none;
 }
