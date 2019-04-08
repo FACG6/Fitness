@@ -26,7 +26,6 @@
 .error{
   background: #8080808a;
   color: red;
-  padding: 10px;
 }
 
 @media screen and (min-width:540px){
