@@ -1,28 +1,38 @@
 import React, { Component } from 'react';
-import Navbar from "./../Navbar/Navbar";
-import WorkCard from "./../WorkCard/WorkCard";
 import './TodayWorkout.css';
+import { Link } from "react-router-dom";
 
+import Navbar from "../SharedComponent/Navbar";
+import WorkCard from "../SharedComponent/WorkCard";
+import {exercises } from '../../api/workout.json';
 class TodayWorkout extends Component {
-  // state()
+  state = {
+    exercises: exercises,
+  };
+  
   render() {
+    const { exercises } = this.state;
+    const ExerciseDay = JSON.parse(localStorage.getItem('updatedExercies'));
+    const dayid = ExerciseDay.map(exercise => exercise.dayid)
     return (
       <div className="Main">
         <Navbar className="Navbar_Main"/>
-        <div className="icon"><i className="far fa-edit" /></div>
-        <p className="Welcome">Welcome Mr. Khader</p>
-        <div className="Card_list">
-          <WorkCard />
-          <WorkCard />
-          <WorkCard />
-          <WorkCard />
-          <WorkCard />
+        <div className='list'>
+        <Link to='/edit'> <div className="icon"><i className="far fa-edit icon" /></div> </Link>  
+          <p className="Welcome">Welcome Mr. Farah</p>
+          <div className="Card_list">
+        { (dayid[0] === (new Date().getDay()).toString())?
+            <ul className="repos--list">
+            {exercises.map(exercise => <WorkCard key={exercise.id} {...exercise} />)}
+            </ul>
+          :
+            <h5 className='Msg'>There is no Exercise For Today ... !</h5>
+          }
+          </div>
         </div>
       </div>
     );
   }
 }
-
-// anti pattern ==> wrapper hell
 
 export default TodayWorkout;

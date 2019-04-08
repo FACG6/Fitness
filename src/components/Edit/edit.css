@@ -1,0 +1,41 @@
+.Edit{
+  width: 80%;
+  margin: 10px auto;
+}
+.days, .exercises{
+  min-height: 90px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #C4C4C4;;
+  margin-bottom: 30px;
+}
+.daylst , .exerciselst{
+  padding: 15px;
+  list-style-type: none;
+  color: #333;
+}
+.daylst{
+  text-align: center;
+}
+.exerciselst{
+  text-align: left;
+  padding-left: 14px;
+}
+.exelst{
+  padding: 5px 0px 15px 25px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+.icons{
+  display: flex;
+  justify-content: space-between;
+}
+.logoutbtn{
+  background: transparent;
+  border: none;
+  color: #afafaf;
+  font-size: 30px;
+  padding-right: 15px;
+  padding-top: 5px;
+}

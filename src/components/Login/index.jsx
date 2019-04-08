@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import Input from '../Input/index';
-import Button from '../button/index'
+import React  from 'react';
+import Input from '../SharedComponent/input';
+import Button from '../SharedComponent/button'
 import './index.css';
 
 const Login =({email, handleChange, handleClick , password , error})=> {

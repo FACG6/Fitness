@@ -4,7 +4,7 @@
 }
 body {
   background: url('https://cdn.shopify.com/s/files/1/2930/2308/products/deep-gray-printed-old-master-solid-background-for-photography-backdrop_540x.jpg?v=1535707898');
-  color:white;
+  color:#eee;
   font-family: 'Denk One', sans-serif;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 i{
-  color: white;
+  color: #eee;
 }
 
 .Card_list{
