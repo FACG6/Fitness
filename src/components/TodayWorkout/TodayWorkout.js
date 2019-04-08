@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './TodayWorkout.css';
 import { Link } from "react-router-dom";
-
+import {Redirect} from 'react-router-dom';
 import Navbar from "../SharedComponent/Navbar";
 import WorkCard from "../SharedComponent/WorkCard";
 import {exercises } from '../../api/workout.json';
@@ -13,6 +13,7 @@ class TodayWorkout extends Component {
   render() {
     const { exercises } = this.state;
     const ExerciseDay = JSON.parse(localStorage.getItem('updatedExercies'));
+    if(ExerciseDay){
     const dayid = ExerciseDay.map(exercise => exercise.dayid)
     return (
       <div className="Main">
@@ -32,6 +33,9 @@ class TodayWorkout extends Component {
         </div>
       </div>
     );
+  }else{
+    return <Redirect to='/editexercises' />
+  }
   }
 }
 
